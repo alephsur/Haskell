@@ -1,0 +1,14 @@
+/home/alephsur/Documentos/Haskell/Exercism/hello-world/src/HelloWorld.hs:
+  hash: abc5ee9c569101ce67b029aac68fab46cfa527aa51ca64f6a99f7da3a0655235
+/home/alephsur/.stack/programs/x86_64-linux/ghc-tinfo6-8.8.4/lib/ghc-8.8.4/include/ghcversion.h:
+  hash: 297e8571427d670d413977834f5cdfc77cb89051d2f5b8302303c442346d15d0
+/usr/include/stdc-predef.h:
+  hash: 64fdf694f7b3d51ec6c45c06dcb71ebbe9455742d3ea673012016668853d3bff
+/home/alephsur/Documentos/Haskell/Exercism/hello-world/package.yaml:
+  hash: 160a1a88b7a5bd0f6f1ffd3e24f56cbba5e4d4fbd7f76ea73d649199ca9d76a5
+? /home/alephsur/Documentos/Haskell/Exercism/hello-world/.stack-work/dist/x86_64-linux-tinfo6/Cabal-3.0.1.0/build/autogen/Paths_hello_world.hs
+: hash: 2fc6bd2d644ffda153eb2751da9be8524a47bf362dce5e6da19b561563ee4834
+? /home/alephsur/Documentos/Haskell/Exercism/hello-world/.stack-work/dist/x86_64-linux-tinfo6/Cabal-3.0.1.0/build/autogen/cabal_macros.h
+: hash: 8da95bfeedb908e84ef78665bb4bd623b4f0fa29f88c7440f78dc611106bdf7a
+/home/alephsur/Documentos/Haskell/Exercism/hello-world/hello-world.cabal:
+  hash: 6173ea839260876e5ad88713461d795bc2f56fad45cbd2e9ac09d07b65ef9c69

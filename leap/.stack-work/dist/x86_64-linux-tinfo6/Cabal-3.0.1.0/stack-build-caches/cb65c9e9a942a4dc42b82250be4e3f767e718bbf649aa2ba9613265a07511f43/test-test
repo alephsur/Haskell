@@ -1,0 +1,14 @@
+? /home/alephsur/Documentos/Exercisim/haskell/leap/.stack-work/dist/x86_64-linux-tinfo6/Cabal-3.0.1.0/build/test/autogen/Paths_leap.hs
+: hash: 961c2ff88a488d2eb437c62f94f344c3dea095abacc755268501fc4991e45110
+/home/alephsur/Documentos/Exercisim/haskell/leap/test/Tests.hs:
+  hash: f0e23b421ae686bb35398eb1b91ca2717b945e25cac3203aaa89d09c9ca8cde0
+/home/alephsur/.stack/programs/x86_64-linux/ghc-tinfo6-8.8.4/lib/ghc-8.8.4/include/ghcversion.h:
+  hash: 297e8571427d670d413977834f5cdfc77cb89051d2f5b8302303c442346d15d0
+? /home/alephsur/Documentos/Exercisim/haskell/leap/.stack-work/dist/x86_64-linux-tinfo6/Cabal-3.0.1.0/build/test/autogen/cabal_macros.h
+: hash: 8bdf6e6a0843b87675832d94215da3f359769bcea8294bc6d486875cce6a604b
+/usr/include/stdc-predef.h:
+  hash: 64fdf694f7b3d51ec6c45c06dcb71ebbe9455742d3ea673012016668853d3bff
+/home/alephsur/Documentos/Exercisim/haskell/leap/leap.cabal:
+  hash: aaabfb0f449ea4b4a6c9213e383a96672cc79366eb779e8ad5780747a9548f98
+/home/alephsur/Documentos/Exercisim/haskell/leap/package.yaml:
+  hash: 741adae21e7fab15e96ec98d318f3ec9cbc33dc86f419cd56cd829d6c64a1c54
