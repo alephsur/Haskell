@@ -1,0 +1,14 @@
+? /home/alephsur/Documentos/Exercisim/haskell/nucleotide-count/.stack-work/dist/x86_64-linux-tinfo6/Cabal-3.0.1.0/build/autogen/Paths_nucleotide_count.hs
+: hash: 495e37f9760c1059d66788b662c4a947bced84b3f3eda3ba5a272b9b7219318c
+/home/alephsur/Documentos/Exercisim/haskell/nucleotide-count/src/DNA.hs:
+  hash: 96bf36bfd89294fd8b272b748a9b42c9ce7d3fbe8004e54db6c4192173d71ced
+/home/alephsur/.stack/programs/x86_64-linux/ghc-tinfo6-8.8.4/lib/ghc-8.8.4/include/ghcversion.h:
+  hash: 297e8571427d670d413977834f5cdfc77cb89051d2f5b8302303c442346d15d0
+/usr/include/stdc-predef.h:
+  hash: 64fdf694f7b3d51ec6c45c06dcb71ebbe9455742d3ea673012016668853d3bff
+/home/alephsur/Documentos/Exercisim/haskell/nucleotide-count/nucleotide-count.cabal:
+  hash: 0a535a70c28ed09ea126b019095465ac7d5307efd9b5357e471c530a90f633e3
+/home/alephsur/Documentos/Exercisim/haskell/nucleotide-count/package.yaml:
+  hash: a9addd79532906f9ac795239d06df65176d38dadf35821e65efed3b7d93b19da
+? /home/alephsur/Documentos/Exercisim/haskell/nucleotide-count/.stack-work/dist/x86_64-linux-tinfo6/Cabal-3.0.1.0/build/autogen/cabal_macros.h
+: hash: 469a671746987700f265d6a09eb67a7fe3ceff8ad6deca037dcd8e1f6cdb3cd9
