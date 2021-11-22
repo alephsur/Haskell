@@ -2,32 +2,29 @@ module Acronym (abbreviate) where
 
 import qualified Data.Text as T
 import           Data.Text (Text)
-import           Data.Char (toUpper)
+import           Data.Char (toUpper, isAlpha, isSpace)
 
 abbreviate :: String -> String
-abbreviate xs = processArrayWords wordList ""
-    where wordList = getArrayWords xs
+abbreviate xs = processString (removePuntuaction xs "") ' ' ""
 
 
-getArrayWords :: String -> [Text]
-getArrayWords xs = T.words $ removePuntuation (T.pack xs) listSymbols
-    where listSymbols = ["-","_"]
+processString :: String -> Char -> String -> String
+processString [] previous result = result
+processString [a] previous result = result
+processString (a:xs) previous result
+    | previous `elem` ['A'..'Z'] = processString xs a result
+    | a `elem` ['A'..'Z'] = processString xs a (result ++ [a])
+    | a == ' ' && isAlpha (head xs) = processString (tail xs) a (result ++ [toUpper $ head xs]) 
+    | (head xs) `elem` ['A'..'Z'] = processString (tail xs) (head xs) (result ++ [head xs])
+    | (head xs) `elem` ['A'..'Z'] = processString (tail xs) (head xs) (result ++ [toUpper $ head xs])
+    | otherwise = processString xs (head xs) result
 
 
-removePuntuation :: Text -> [String] -> Text
-removePuntuation xs [] = xs
-removePuntuation xs listSymbols = removePuntuation (T.replace (T.pack symbol) (T.pack " ") xs) (tail listSymbols)
-    where symbol = head listSymbols
 
-
-processArrayWords :: [Text] -> String -> String
-processArrayWords [] result = result
-processArrayWords wordList result = processArrayWords (tail wordList) (result ++ (getLettersPerWord word))
-    where word = head wordList
-
-
-getLettersPerWord :: Text -> String
-getLettersPerWord word = [firstLetter] ++ (filter (`elem` ['A'..'Z']) (tail wordString))
-    where 
-        wordString = T.unpack word
-        firstLetter = toUpper $ head wordString
+removePuntuaction :: String -> String -> String
+removePuntuaction [] result = result
+removePuntuaction (x:xs) result
+    | isAlpha x == True = removePuntuaction xs (result ++ [x])
+    | isSpace x == True = removePuntuaction xs (result ++ [x])
+    | (x == '\'') == True = removePuntuaction xs result
+    | otherwise = removePuntuaction xs (result ++ " ")
