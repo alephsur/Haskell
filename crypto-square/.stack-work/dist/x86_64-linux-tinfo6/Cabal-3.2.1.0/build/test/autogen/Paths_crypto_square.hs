@@ -30,7 +30,7 @@ version = Version [3,2,0,6] []
 bindir, libdir, dynlibdir, datadir, libexecdir, sysconfdir :: FilePath
 
 bindir     = "/home/alephsur/Documentos/Exercisim/haskell/crypto-square/.stack-work/install/x86_64-linux-tinfo6/43d0c54deb43e3a695b5d6d42dd545b4f8500894d10ebc8de6b539fb7cf61d6d/8.10.7/bin"
-libdir     = "/home/alephsur/Documentos/Exercisim/haskell/crypto-square/.stack-work/install/x86_64-linux-tinfo6/43d0c54deb43e3a695b5d6d42dd545b4f8500894d10ebc8de6b539fb7cf61d6d/8.10.7/lib/x86_64-linux-ghc-8.10.7/crypto-square-3.2.0.6-Hpkq6Py91Y78fbxfLoXuJh-test"
+libdir     = "/home/alephsur/Documentos/Exercisim/haskell/crypto-square/.stack-work/install/x86_64-linux-tinfo6/43d0c54deb43e3a695b5d6d42dd545b4f8500894d10ebc8de6b539fb7cf61d6d/8.10.7/lib/x86_64-linux-ghc-8.10.7/crypto-square-3.2.0.6-EyfImuphZLX9XhoLC2MExZ-test"
 dynlibdir  = "/home/alephsur/Documentos/Exercisim/haskell/crypto-square/.stack-work/install/x86_64-linux-tinfo6/43d0c54deb43e3a695b5d6d42dd545b4f8500894d10ebc8de6b539fb7cf61d6d/8.10.7/lib/x86_64-linux-ghc-8.10.7"
 datadir    = "/home/alephsur/Documentos/Exercisim/haskell/crypto-square/.stack-work/install/x86_64-linux-tinfo6/43d0c54deb43e3a695b5d6d42dd545b4f8500894d10ebc8de6b539fb7cf61d6d/8.10.7/share/x86_64-linux-ghc-8.10.7/crypto-square-3.2.0.6"
 libexecdir = "/home/alephsur/Documentos/Exercisim/haskell/crypto-square/.stack-work/install/x86_64-linux-tinfo6/43d0c54deb43e3a695b5d6d42dd545b4f8500894d10ebc8de6b539fb7cf61d6d/8.10.7/libexec/x86_64-linux-ghc-8.10.7/crypto-square-3.2.0.6"

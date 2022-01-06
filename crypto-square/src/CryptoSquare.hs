@@ -3,24 +3,13 @@ module CryptoSquare (encode) where
 import Data.Char
 import Data.List    (intercalate, transpose)
 
+
 encode :: String -> String
-encode xs = intercalate " " $ transpose matrix
+encode xs = unwords . transpose $ matrix
     where 
-        str = removePuntuactionAndUpper xs
-        matrixLen = fst (calculateSquareSize str)
+        str = filter isAlphaNum . map toLower $ xs
+        matrixLen = ceiling . sqrt .fromIntegral $ length str
         matrix = getMatrix str matrixLen []
-
-
-removePuntuactionAndUpper :: String -> String
-removePuntuactionAndUpper str = [toLower x | x <- str, not (x `elem` ".,;:' %!@")] 
-
-calculateSquareSize :: String -> (Int, Int)
-calculateSquareSize str =
-    let strLen = length str
-        sqrtLen = round $ sqrt $ (fromIntegral strLen)/1
-        isRectangle = sqrtLen^2 < strLen  
-    in if isRectangle then (sqrtLen +1, sqrtLen) else (sqrtLen, sqrtLen)
-
 
 getMatrix :: String -> Int -> [String] -> [String]
 getMatrix [] _ acc = acc

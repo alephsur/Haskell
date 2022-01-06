@@ -177,7 +177,7 @@
 #endif /* MIN_TOOL_VERSION_strip */
 
 #ifndef CURRENT_COMPONENT_ID
-#define CURRENT_COMPONENT_ID "crypto-square-3.2.0.6-Hpkq6Py91Y78fbxfLoXuJh-test"
+#define CURRENT_COMPONENT_ID "crypto-square-3.2.0.6-EyfImuphZLX9XhoLC2MExZ-test"
 #endif /* CURRENT_COMPONENT_ID */
 #ifndef CURRENT_PACKAGE_VERSION
 #define CURRENT_PACKAGE_VERSION "3.2.0.6"
