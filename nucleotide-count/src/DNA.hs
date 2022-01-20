@@ -1,35 +1,30 @@
-module DNA (nucleotideCounts, updateMap, Nucleotide(..)) where
+{-# LANGUAGE TupleSections #-}
 
-import Data.Map (Map, fromList, update)
+module DNA (nucleotideCounts, Nucleotide(..)) where
 
-data Nucleotide = A | C | G | T | X deriving (Eq, Ord, Show)
+import Data.Map         (Map, fromList, fromListWith, union)
+import Data.Either
+
+data Nucleotide = A | C | G | T deriving (Eq, Ord, Show)
 
 nucleotideCounts :: String -> Either String (Map Nucleotide Int)
 nucleotideCounts xs = 
-    if X `elem` nucleotidesConverted then
+    if isLeft mapSequence then
         Left xs
     else
-        Right (countOnMap nucleotidesConverted mapReturn)
+        Right $ union mapedSequence (fromList [(A,0),(C,0),(G,0),(T,0)])
     where
-        nucleotidesConverted = map convert xs
-        mapReturn = fromList [(A,0),(C,0),(G,0),(T,0)]    
-
-convert :: Char -> Nucleotide
-convert 'A' = A
-convert 'C' = C
-convert 'G' = G
-convert 'T' = T
-convert _ = X
+        mapSequence = histogram <$> (sequence $ map convert xs)
+        mapedSequence = fromListWith (+) (fromRight [] mapSequence)
+        histogram list =[(x, 1) | x <- list]
 
 
-countOnMap :: [Nucleotide] -> (Map Nucleotide Int) -> (Map Nucleotide Int)
-countOnMap [] mapa = mapa
-countOnMap (x:xs) mapa = countOnMap xs (updateMap mapa x)
 
-updateMap :: (Map Nucleotide Int) -> Nucleotide ->  (Map Nucleotide Int)
-updateMap mapa nucleotide =
-    let f x = Just (x + 1)
-    in update f nucleotide mapa
-
+convert :: Char -> Either String Nucleotide
+convert 'A' = Right A
+convert 'C' = Right C
+convert 'G' = Right G
+convert 'T' = Right T
+convert _ = Left "X"
 
 
