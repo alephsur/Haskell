@@ -1,26 +1,18 @@
 module SumOfMultiples (sumOfMultiples) where
 
-import Data.List (nub,sum)
+import Data.List (nub,sum, concat)
 
 sumOfMultiples :: [Integer] -> Integer -> Integer
 sumOfMultiples [] limit = 0
 sumOfMultiples factors limit = 
-    Data.List.sum $ nub $ processListToGetMultiples factors limit []
-
-
-processListToGetMultiples :: [Integer] -> Integer -> [Integer] -> [Integer]
-processListToGetMultiples [] limit acc = acc
-processListToGetMultiples factors limit acc = 
-    processListToGetMultiples (tail factors) limit (acc ++ (getMultiplesForNumber (head factors) 0 limit [] ))
+    Data.List.sum $ nub $ concat (processListToGetMultiples factors limit)
 
 
 
-getMultiplesForNumber :: Integer -> Integer -> Integer -> [Integer] -> [Integer]
-getMultiplesForNumber 0 multiplier limit  acc = [0]
-getMultiplesForNumber number multiplier limit  acc =
-    if (number * multiplier) < limit then
-        getMultiplesForNumber number (multiplier+1) limit acc ++ [(number * multiplier)]
-    else
-        acc
-    
+getMultiplesForNumber :: Integer -> Integer -> [Integer]
+getMultiplesForNumber 0 limit = [0]
+getMultiplesForNumber number limit = takeWhile (<limit) [number*i |i <- [1..]]
 
+
+processListToGetMultiples :: [Integer] -> Integer -> [[Integer]]
+processListToGetMultiples factors limit = [(getMultiplesForNumber i limit) | i <- factors]
