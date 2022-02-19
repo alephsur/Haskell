@@ -1,30 +1,21 @@
 module Acronym (abbreviate) where
 
-import qualified Data.Text as T
-import           Data.Text (Text)
-import           Data.Char (toUpper, isAlpha, isSpace)
+import           Data.Char (toUpper, isLetter)
+import           Data.List (partition)
 
 abbreviate :: String -> String
-abbreviate xs = processString (removePuntuaction xs "") ' ' ""
+abbreviate xs = concat $ map (getCapitalLetters) $ words cleanString
+    where cleanString = map onlyLetter xs
 
+onlyLetter :: Char -> Char
+onlyLetter c
+    | isLetter c = c
+    | '\'' == c = c
+    | otherwise = ' '
 
-processString :: String -> Char -> String -> String
-processString [] previous result = result
-processString [a] previous result = result
-processString (a:xs) previous result
-    | previous `elem` ['A'..'Z'] = processString xs a result
-    | a `elem` ['A'..'Z'] = processString xs a (result ++ [a])
-    | a == ' ' && isAlpha (head xs) = processString (tail xs) a (result ++ [toUpper $ head xs]) 
-    | (head xs) `elem` ['A'..'Z'] = processString (tail xs) (head xs) (result ++ [head xs])
-    | (head xs) `elem` ['A'..'Z'] = processString (tail xs) (head xs) (result ++ [toUpper $ head xs])
-    | otherwise = processString xs (head xs) result
-
-
-
-removePuntuaction :: String -> String -> String
-removePuntuaction [] result = result
-removePuntuaction (x:xs) result
-    | isAlpha x == True = removePuntuaction xs (result ++ [x])
-    | isSpace x == True = removePuntuaction xs (result ++ [x])
-    | (x == '\'') == True = removePuntuaction xs result
-    | otherwise = removePuntuaction xs (result ++ " ")
+getCapitalLetters :: String -> String
+getCapitalLetters word
+    | length capitalLetters > 0 && word /= capitalLetters = capitalLetters
+    | otherwise = [toUpper $ (head word)]
+    where
+        capitalLetters = fst $ partition (`elem` ['A'..'Z']) word
