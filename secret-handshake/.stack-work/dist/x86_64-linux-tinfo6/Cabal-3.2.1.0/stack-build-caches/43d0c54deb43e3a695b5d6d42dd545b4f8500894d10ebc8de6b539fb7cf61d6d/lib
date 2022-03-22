@@ -1,0 +1,14 @@
+? /home/alephsur/Documentos/Exercisim/haskell/secret-handshake/.stack-work/dist/x86_64-linux-tinfo6/Cabal-3.2.1.0/build/autogen/Paths_secret_handshake.hs
+: hash: db9fc7f8f4b8cef4e9a051585723f65e26cd623834f58c340db0058721d63d47
+/home/alephsur/.stack/programs/x86_64-linux/ghc-tinfo6-8.10.7/lib/ghc-8.10.7/include/ghcversion.h:
+  hash: c013160c9aa8a98f4638616496dce720c23ceca8ef9d6b3212b654642fbda5e4
+? /home/alephsur/Documentos/Exercisim/haskell/secret-handshake/.stack-work/dist/x86_64-linux-tinfo6/Cabal-3.2.1.0/build/autogen/cabal_macros.h
+: hash: 61b442dbcc540031317892ad3d24dfb7f0dc4ca681b6654923302f1be7ab3ce4
+/usr/include/stdc-predef.h:
+  hash: 64fdf694f7b3d51ec6c45c06dcb71ebbe9455742d3ea673012016668853d3bff
+/home/alephsur/Documentos/Exercisim/haskell/secret-handshake/secret-handshake.cabal:
+  hash: 746ffb9e40fd01fd80b14c34071ced884bac087d25d1ac61fa34df258eb34c3b
+/home/alephsur/Documentos/Exercisim/haskell/secret-handshake/package.yaml:
+  hash: 5cdc888731e0dd89d56a8ac6a8c18b4a2cd8a9ddf238884046244093a9915f17
+/home/alephsur/Documentos/Exercisim/haskell/secret-handshake/src/SecretHandshake.hs:
+  hash: bbbcf1807af13baa69fdc6260bd39d2237f40c6f74fc50c55b651ac693d3c7cf
