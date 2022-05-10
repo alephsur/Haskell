@@ -6,14 +6,7 @@ import      Data.Char (toUpper)
 
 
 anagramsFor :: String -> [String] -> [String]
-anagramsFor xs xss = processListOfWords xs xss []
-
-
-processListOfWords :: String -> [String] -> [String] -> [String]
-processListOfWords _ [] result = reverse result
-processListOfWords xs (x:xss) result
-    | compareWords xs x = processListOfWords xs xss (x : result)
-    | otherwise = processListOfWords xs xss result
+anagramsFor xs xss = filter (compareWords xs) xss
 
 
 compareWords :: String -> String -> Bool
