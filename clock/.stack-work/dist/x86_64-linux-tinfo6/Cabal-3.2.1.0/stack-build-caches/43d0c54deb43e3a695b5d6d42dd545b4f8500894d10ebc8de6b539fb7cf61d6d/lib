@@ -1,7 +1,7 @@
 /home/alephsur/Documentos/Exercisim/haskell/clock/exercism-clock.cabal:
   hash: 70614f5444808d3b4a2c207784fb8a24170573d522a78c836f707397fc7af5eb
 /home/alephsur/Documentos/Exercisim/haskell/clock/src/Clock.hs:
-  hash: c5793d89ba0994977ae6c547da4f8ca11cd57444d600a19ed8af063f5f7e1673
+  hash: dcff35fef6d161fc1ce3c5719138ecd8fef9b4b29cb41e19f327c340e5e12b2e
 /home/alephsur/.stack/programs/x86_64-linux/ghc-tinfo6-8.10.7/lib/ghc-8.10.7/include/ghcversion.h:
   hash: c013160c9aa8a98f4638616496dce720c23ceca8ef9d6b3212b654642fbda5e4
 /home/alephsur/Documentos/Exercisim/haskell/clock/package.yaml:
@@ -9,6 +9,6 @@
 /usr/include/stdc-predef.h:
   hash: 64fdf694f7b3d51ec6c45c06dcb71ebbe9455742d3ea673012016668853d3bff
 ? /home/alephsur/Documentos/Exercisim/haskell/clock/.stack-work/dist/x86_64-linux-tinfo6/Cabal-3.2.1.0/build/autogen/Paths_exercism_clock.hs
-: hash: d23247e83c954939f4968518e3d2f947c09d223d683225e6efb7d53e16b55000
+: hash: 1cfe1e291ccb7a2a9a9a5b720b201c06e4d6973b7b9ce103375f39775ac2c332
 ? /home/alephsur/Documentos/Exercisim/haskell/clock/.stack-work/dist/x86_64-linux-tinfo6/Cabal-3.2.1.0/build/autogen/cabal_macros.h
 : hash: e0f31bdb3a3d92f43e1ecaa436c171628c22fda8acf58c8ca72da3c08acb8dd6
