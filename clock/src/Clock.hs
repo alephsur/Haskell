@@ -2,28 +2,31 @@ module Clock (addDelta, fromHourMin, toString) where
 
 data Clock = Clock
   {
-    hour :: Int,
-    minutes :: Int  
+    minutesFromMidnight :: Int
   }
-  deriving Eq
+  deriving (Eq, Show)
+
 
 fromHourMin :: Int -> Int -> Clock
 fromHourMin hour min = 
-  Clock hourCalculated minutesCalculate
+  Clock totalMinutes
   where
-    hourMinutesNegativeRollOver = min `div` 60
-    minutesCalculate = min `mod` 60
-    hourCalculated = (hour + hourMinutesNegativeRollOver) `mod` 24
+    totalMinutes = ((hour * 60) + min) `mod` (24*60)
+
     
 
 toString :: Clock -> String
-toString clock = (showIntPad (hour clock)) ++ ":" ++ (showIntPad (minutes clock))
+toString clock = (showIntPad thours) ++ ":" ++ (showIntPad tmin)
+  where
+    thours = (minutesFromMidnight clock) `div` 60
+    tmin = (minutesFromMidnight clock) `mod` 60
 
 addDelta :: Int -> Int -> Clock -> Clock
-addDelta h m clock = fromHourMin addedHours addedMinutes
+addDelta h m clock = fromHourMin thours tmin
   where 
-    addedHours = ((hour clock) + h)
-    addedMinutes = ((minutes clock) + m)
+    totalMinutes = (minutesFromMidnight clock) + h * 60 + m
+    thours = (totalMinutes `div` 60) `mod` 24
+    tmin = totalMinutes `mod` 60
 
 
 showIntPad :: Int -> String
