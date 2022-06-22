@@ -1,0 +1,14 @@
+? /home/alephsur/Documentos/Exercisim/haskell/temperature/.stack-work/dist/x86_64-linux-tinfo6/Cabal-3.2.1.0/build/autogen/Paths_temperature.hs
+: hash: e40427b129813879c631c5b7ee918936353a4caeb30990e7b710a437c8e80ca3
+/home/alephsur/Documentos/Exercisim/haskell/temperature/src/Temperature.hs:
+  hash: 7d1e23f1d155211b52c9fa5ab7687d7755d035dd38c90f7039933b9063151b75
+/home/alephsur/Documentos/Exercisim/haskell/temperature/temperature.cabal:
+  hash: 4323c60b09d225880930303a7620950034ef1550e59020ca7af8446df788509c
+/home/alephsur/.stack/programs/x86_64-linux/ghc-tinfo6-8.10.7/lib/ghc-8.10.7/include/ghcversion.h:
+  hash: c013160c9aa8a98f4638616496dce720c23ceca8ef9d6b3212b654642fbda5e4
+? /home/alephsur/Documentos/Exercisim/haskell/temperature/.stack-work/dist/x86_64-linux-tinfo6/Cabal-3.2.1.0/build/autogen/cabal_macros.h
+: hash: 8f55ba7bb9d4eea963cae413b48b3bfe947682db4e4724ff0e75a0d2d6cef2ea
+/usr/include/stdc-predef.h:
+  hash: cb08cd5d4cc059a90833ac48a284d25016e8d56ded8ad4cd98d8ac59cc5053f3
+/home/alephsur/Documentos/Exercisim/haskell/temperature/package.yaml:
+  hash: 954639bc3b9e73ee8354271369df607864c140a53224913230ebeb7f8412d755
