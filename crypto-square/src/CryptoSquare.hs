@@ -14,13 +14,11 @@ encode xs = unwords . transpose $ matrix
 getMatrix :: String -> Int -> [String] -> [String]
 getMatrix [] _ acc = acc
 getMatrix str matrixLen acc =
-    let strSplited = splitAt matrixLen str
-        restStr = snd strSplited
-        chunk = fst strSplited
+    let (chunk,restStr) = splitAt matrixLen str
     in getMatrix restStr matrixLen (acc ++ [paddingRigth chunk matrixLen])
 
 
 paddingRigth :: String -> Int -> String
 paddingRigth str x 
-    | length str < x = str ++ replicate (x - length str) ' '
+    | l <- length str, l < x = str ++ replicate (x - l) ' '
     | otherwise = str

@@ -3,12 +3,12 @@
 ? /home/alephsur/Documentos/Exercisim/haskell/luhn/.stack-work/dist/x86_64-linux-tinfo6/Cabal-3.2.1.0/build/test/autogen/Paths_luhn.hs
 : hash: d7d11d41a81bf13d3e293897ca69ebb3939f44a2b34d1c4e6668dee6a12efaf1
 ? /home/alephsur/Documentos/Exercisim/haskell/luhn/.stack-work/dist/x86_64-linux-tinfo6/Cabal-3.2.1.0/build/test/autogen/cabal_macros.h
-: hash: b6079bdc36950901f96b982657fd7a81e326405d4383f3236b6940969360a9f4
+: hash: ac581348a2641b276094a4d59edd597c03a5e7c4406a6c005c494fd7b2d97394
 /home/alephsur/.stack/programs/x86_64-linux/ghc-tinfo6-8.10.7/lib/ghc-8.10.7/include/ghcversion.h:
   hash: c013160c9aa8a98f4638616496dce720c23ceca8ef9d6b3212b654642fbda5e4
 /home/alephsur/Documentos/Exercisim/haskell/luhn/package.yaml:
   hash: 973fb95782f428f3e5ec8ead20a3dab7a2de0d271dc5fe31844587aa4f1940ab
 /usr/include/stdc-predef.h:
-  hash: 64fdf694f7b3d51ec6c45c06dcb71ebbe9455742d3ea673012016668853d3bff
+  hash: cb08cd5d4cc059a90833ac48a284d25016e8d56ded8ad4cd98d8ac59cc5053f3
 /home/alephsur/Documentos/Exercisim/haskell/luhn/test/Tests.hs:
   hash: d1750ad12c4f603f3e569df2b943c2289d6c6260802f0a1a3e8f4e36c8c56174

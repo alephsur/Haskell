@@ -5,10 +5,10 @@
 /home/alephsur/Documentos/Exercisim/haskell/crypto-square/package.yaml:
   hash: 57eb0170c2febf3022e4d1544bd192075381a37030cb5cc681b10c2b2fbf6c89
 /home/alephsur/Documentos/Exercisim/haskell/crypto-square/src/CryptoSquare.hs:
-  hash: 228debcb56741d1d57dc065d3f7ac5142d97d39462c38ca32387192749df484d
+  hash: e29da8a19d18bac087f89f373704f960aee5b2adce574a0352b52c3608da8f96
 /usr/include/stdc-predef.h:
-  hash: 64fdf694f7b3d51ec6c45c06dcb71ebbe9455742d3ea673012016668853d3bff
+  hash: cb08cd5d4cc059a90833ac48a284d25016e8d56ded8ad4cd98d8ac59cc5053f3
 ? /home/alephsur/Documentos/Exercisim/haskell/crypto-square/.stack-work/dist/x86_64-linux-tinfo6/Cabal-3.2.1.0/build/autogen/cabal_macros.h
-: hash: b4121455aa1c20780c5ac32a67b644a39bac274797dbc1d75290ee75c2629eb7
+: hash: 82f719227f63a309c7b870a43f080629a7e6b71dca3a464544006e03426dfff0
 ? /home/alephsur/Documentos/Exercisim/haskell/crypto-square/.stack-work/dist/x86_64-linux-tinfo6/Cabal-3.2.1.0/build/autogen/Paths_crypto_square.hs
 : hash: a59f749ccf98d89e33a2080468125b831ab211e838ce906b07c300c1a74af56f

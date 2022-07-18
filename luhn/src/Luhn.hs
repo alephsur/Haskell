@@ -1,7 +1,6 @@
 module Luhn (isValid) where
 
 import Data.Char
-import Data.List.Split (chunksOf)
 import Data.List    (reverse)
 
 
@@ -16,7 +15,3 @@ isValid n
         luhn (x:y:ys) = x + (if y<5 then y*2 else (y*2)-9) + luhn ys
         luhn [x] = x
         luhn [] = 0
-
-
-
-
