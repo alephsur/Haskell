@@ -13,12 +13,13 @@ whiteBoard = ["________"
 
 
 boardString :: Maybe (Int, Int) -> Maybe (Int, Int) -> String
-boardString white black = unlines $ reformatBoard blackQueenAdded [] 0
+boardString white black = unlines $ reformatedBoard
     where 
         whiteQueenAdded = addQueen 'W' wQueenCord whiteBoard [] 0
         blackQueenAdded = addQueen 'B' bQueenCord whiteQueenAdded [] 0
         wQueenCord = getQueenPos white
         bQueenCord = getQueenPos black
+        reformatedBoard = foldl reformatBoard' [] blackQueenAdded
 
 
 canAttack :: (Int, Int) -> (Int, Int) -> Bool
@@ -68,8 +69,10 @@ reformatRow [x] formatedRow = reformatRow [] (formatedRow ++ [x])
 reformatRow (x:xs) formatedRow = reformatRow xs (formatedRow ++ [x] ++ " ")
     
 
-
-
-
+reformatBoard' :: [String] -> String -> [String]
+reformatBoard' newBoard x = 
+    newBoard ++ [formatedRow]
+    where 
+        formatedRow = (reformatRow x "")
 
     

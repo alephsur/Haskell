@@ -5,9 +5,9 @@
 /home/alephsur/.stack/programs/x86_64-linux/ghc-tinfo6-8.10.7/lib/ghc-8.10.7/include/ghcversion.h:
   hash: c013160c9aa8a98f4638616496dce720c23ceca8ef9d6b3212b654642fbda5e4
 ? /home/alephsur/Documentos/Exercisim/haskell/phone-number/.stack-work/dist/x86_64-linux-tinfo6/Cabal-3.2.1.0/build/test/autogen/cabal_macros.h
-: hash: d9a22398f01d7d80aff352e6e05c59fce5f5bf47d2d00635ebd58b6a32902500
+: hash: f7974fe3fb05c954778d0ba666bac460cd97eef3365e695b0e0dd45c7fafbcd1
 /usr/include/stdc-predef.h:
-  hash: 64fdf694f7b3d51ec6c45c06dcb71ebbe9455742d3ea673012016668853d3bff
+  hash: cb08cd5d4cc059a90833ac48a284d25016e8d56ded8ad4cd98d8ac59cc5053f3
 /home/alephsur/Documentos/Exercisim/haskell/phone-number/phone-number.cabal:
   hash: 520e2007ffb9ccc8fc3b1b65f7d7d9bc787c9d1d2b4d2a643373cdeec7831adc
 /home/alephsur/Documentos/Exercisim/haskell/phone-number/test/Tests.hs:
