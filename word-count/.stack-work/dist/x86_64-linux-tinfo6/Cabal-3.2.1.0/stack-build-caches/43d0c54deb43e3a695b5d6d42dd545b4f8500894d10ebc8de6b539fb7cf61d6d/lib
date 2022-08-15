@@ -1,0 +1,14 @@
+/home/alephsur/.stack/programs/x86_64-linux/ghc-tinfo6-8.10.7/lib/ghc-8.10.7/include/ghcversion.h:
+  hash: c013160c9aa8a98f4638616496dce720c23ceca8ef9d6b3212b654642fbda5e4
+? /home/alephsur/Documentos/Exercisim/haskell/word-count/.stack-work/dist/x86_64-linux-tinfo6/Cabal-3.2.1.0/build/autogen/Paths_word_count.hs
+: hash: a7672886e0a841993fefd247b064ccbfac7724055d4270347ce6286300bf224d
+/home/alephsur/Documentos/Exercisim/haskell/word-count/package.yaml:
+  hash: 9c7f687e77e8e4ac21615c8e62211770c7f5e1e454c63b1b9049e169411e7c83
+/usr/include/stdc-predef.h:
+  hash: cb08cd5d4cc059a90833ac48a284d25016e8d56ded8ad4cd98d8ac59cc5053f3
+/home/alephsur/Documentos/Exercisim/haskell/word-count/word-count.cabal:
+  hash: 8cc696359fde775d197054b65fc2c348d4b5e6e17807973be784bbb5c4011b50
+? /home/alephsur/Documentos/Exercisim/haskell/word-count/.stack-work/dist/x86_64-linux-tinfo6/Cabal-3.2.1.0/build/autogen/cabal_macros.h
+: hash: 1414a0c7279199d662638664dd2b6209250ef827d81d6e3d7324cc1a1a2ebca1
+/home/alephsur/Documentos/Exercisim/haskell/word-count/src/WordCount.hs:
+  hash: 93ae27c0f65cea8886b8c29342910e8c84adf6c14969db6146c75e08a09a17af
