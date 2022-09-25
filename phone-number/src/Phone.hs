@@ -1,22 +1,11 @@
 module Phone (number) where
 
-import Data.Char (isPunctuation, isNumber, isSpace)
+import Data.Char (isPunctuation, isDigit, isSpace)
 
 number :: String -> Maybe String
-number xs = case cleanNumber xs "" of
-                Nothing -> Nothing
-                Just n -> isValidNumber n
+number xs = isValidNumber cleanNumber
+    where cleanNumber = filter isDigit xs
 
-
-cleanNumber :: String -> String -> Maybe String
-cleanNumber [] str = Just str
-cleanNumber (x:xs) str
-    | isNumber x = cleanNumber xs (str ++ [x])
-    | x `elem` punctuationSymbolValid = cleanNumber xs str
-    | isSpace x = cleanNumber xs str
-    | otherwise = Nothing
-
-punctuationSymbolValid = ['.','-','(', ')','+']
 
 
 isValidNumber :: String -> Maybe String

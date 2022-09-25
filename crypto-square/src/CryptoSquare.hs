@@ -1,8 +1,7 @@
 module CryptoSquare (encode) where
 
 import Data.Char
-import Data.List       (intercalate, transpose)
-import Data.List.Utils (replace)
+import Data.List    (intercalate, transpose)
 
 
 encode :: String -> String
