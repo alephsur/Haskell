@@ -5,18 +5,24 @@ import Data.Char (intToDigit)
 import Data.Bits (testBit)
 
 handshake :: Int -> [String]
-handshake n = generateHandShake' n [] 5
+handshake n = reverseHandShake n list
+    where list = foldl (generateHandShake' n) [] moves
 
-
-generateHandShake' :: Int -> [String] -> Int -> [String]
-generateHandShake' n result 0 = result
-generateHandShake' n result steps
-    | testBit n 0 && steps == 5 = generateHandShake' n  (result ++ ["wink"]) (steps -1)
-    | testBit n 1 && steps == 4 = generateHandShake' n (result ++ ["double blink"]) (steps -1)
-    | testBit n 2 && steps == 3 = generateHandShake' n (result ++ ["close your eyes"]) (steps -1)
-    | testBit n 3 && steps == 2 = generateHandShake' n (result ++ ["jump"]) (steps -1)
-    | testBit n 4 && steps == 1 = generateHandShake' n (reverse result) (steps -1)
-    | otherwise = generateHandShake' n result (steps - 1)
+moves :: [(Int, String)]
+moves = zip [0..] ["wink", "double blink", "close your eyes", "jump"]
 
     
-    
+generateHandShake' :: Int -> [String] -> (Int,String) -> [String]
+generateHandShake' n acc x 
+    | testBit n (fst x) && (fst x) == 0 = acc ++ [value]
+    | testBit n (fst x) && (fst x) == 1 = acc ++ [value]
+    | testBit n (fst x) && (fst x) == 2 = acc ++ [value]
+    | testBit n (fst x) && (fst x) == 3 = acc ++ [value]
+    | otherwise = acc
+    where 
+        value = snd x
+
+reverseHandShake :: Int -> [String] -> [String]
+reverseHandShake n list
+    | testBit n 4 = reverse list
+    | otherwise = list
