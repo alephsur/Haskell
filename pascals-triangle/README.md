@@ -40,4 +40,4 @@ the right and left of the current position in the previous row.
 
 ### Based on
 
-Pascal's Triangle at Wolfram Math World - http://mathworld.wolfram.com/PascalsTriangle.html
+Pascal's Triangle at Wolfram Math World - https://mathworld.wolfram.com/PascalsTriangle.html
