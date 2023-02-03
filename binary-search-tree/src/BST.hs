@@ -15,11 +15,11 @@ data BST a = EmptyTree | Node a (BST a) (BST a) deriving (Eq, Show)
 
 
 bstLeft :: BST a -> Maybe (BST a)
-bstLeft (Node a EmptyTree right) = Just (Node a EmptyTree right)
+bstLeft EmptyTree = Nothing
 bstLeft (Node a left right)  = Just left
 
 bstRight :: BST a -> Maybe (BST a)
-bstRight (Node a left EmptyTree) = Just (Node a left EmptyTree)
+bstRight EmptyTree = Nothing
 bstRight (Node a left right) = Just right
 
 bstValue :: BST a -> Maybe a
@@ -30,14 +30,13 @@ empty :: BST a
 empty = EmptyTree
 
 fromList :: Ord a => [a] -> BST a
-fromList xs = foldr insert EmptyTree (reverse xs)
+fromList xs = foldl (flip insert) EmptyTree xs
 
 insert :: Ord a => a -> BST a -> BST a
 insert x EmptyTree = singleton x
 insert x (Node y left right)
      | x <= y = Node y (insert x left) right
-     | x > y = Node y left (insert x right)
-     | otherwise = Node x left right
+     | otherwise = Node y left (insert x right)
 
 singleton :: a -> BST a
 singleton x = Node x EmptyTree EmptyTree

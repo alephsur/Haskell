@@ -1,0 +1,14 @@
+/home/alephsur/Documentos/Exercisim/haskell/hamming/test/Tests.hs:
+  hash: 3559a7966386f008995556d1af86fae40effd68dbd3cf819ff7439af61cadfbe
+/home/alephsur/Documentos/Exercisim/haskell/hamming/hamming.cabal:
+  hash: 9580de871869e65acf741b97b3bf94219bbc2f37d5bf641d2edc294d70fa0daf
+/home/alephsur/Documentos/Exercisim/haskell/hamming/package.yaml:
+  hash: b288dbc09c4f862b47c9c00241cb27b69d073dbdcf4c1c573aeed7b7552683f7
+? /home/alephsur/Documentos/Exercisim/haskell/hamming/.stack-work/dist/x86_64-linux-tinfo6/Cabal-3.4.1.0/build/test/autogen/Paths_hamming.hs
+: hash: 51f021290cd9052777e5d3b05be2303588a7d882b1478ac3fbeb24a78d547be9
+/home/alephsur/.stack/programs/x86_64-linux/ghc-tinfo6-9.0.2/lib/ghc-9.0.2/include/ghcversion.h:
+  hash: b6281754d6dc5c5462a97f01fbffb615a7d9f031384e8e8250fce23e8f43f266
+/usr/include/stdc-predef.h:
+  hash: cb08cd5d4cc059a90833ac48a284d25016e8d56ded8ad4cd98d8ac59cc5053f3
+? /home/alephsur/Documentos/Exercisim/haskell/hamming/.stack-work/dist/x86_64-linux-tinfo6/Cabal-3.4.1.0/build/test/autogen/cabal_macros.h
+: hash: a85403f79f164fbcd7387c9a4ec092408dad67c9cc8ec2b29a1abfea0afb5e28

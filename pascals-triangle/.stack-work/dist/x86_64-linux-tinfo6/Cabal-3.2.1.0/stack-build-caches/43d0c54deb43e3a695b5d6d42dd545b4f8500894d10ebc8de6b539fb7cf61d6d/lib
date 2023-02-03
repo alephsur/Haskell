@@ -1,0 +1,14 @@
+/home/alephsur/.stack/programs/x86_64-linux/ghc-tinfo6-8.10.7/lib/ghc-8.10.7/include/ghcversion.h:
+  hash: c013160c9aa8a98f4638616496dce720c23ceca8ef9d6b3212b654642fbda5e4
+? /home/alephsur/Documentos/Exercisim/haskell/pascals-triangle/.stack-work/dist/x86_64-linux-tinfo6/Cabal-3.2.1.0/build/autogen/Paths_pascals_triangle.hs
+: hash: e305922a9909991e8483d77357bcbcc591296620b0fa58b04f1d7cc2dd69a6bd
+? /home/alephsur/Documentos/Exercisim/haskell/pascals-triangle/.stack-work/dist/x86_64-linux-tinfo6/Cabal-3.2.1.0/build/autogen/cabal_macros.h
+: hash: bfbd5c8b9b118680a326cabe70e400c58b55bcd0d00dc99475b3065acdd082ba
+/usr/include/stdc-predef.h:
+  hash: cb08cd5d4cc059a90833ac48a284d25016e8d56ded8ad4cd98d8ac59cc5053f3
+/home/alephsur/Documentos/Exercisim/haskell/pascals-triangle/pascals-triangle.cabal:
+  hash: 2dc88d5f70dfb036a69e4131492a23bee140697f7adfce263c1039301b82f5e7
+/home/alephsur/Documentos/Exercisim/haskell/pascals-triangle/package.yaml:
+  hash: 26501f0cc8f58637d57b7a84bff2b44f751c90c6d1aaa2b15afcd7523c6f1774
+/home/alephsur/Documentos/Exercisim/haskell/pascals-triangle/src/Triangle.hs:
+  hash: 476ef76f86ecf654822464c37640806c2767a1b295b81887e30a42f555e907f4
