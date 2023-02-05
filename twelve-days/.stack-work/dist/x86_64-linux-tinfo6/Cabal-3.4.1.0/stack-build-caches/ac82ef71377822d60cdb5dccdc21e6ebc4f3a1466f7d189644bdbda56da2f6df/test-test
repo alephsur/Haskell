@@ -1,0 +1,14 @@
+/home/alephsur/Documentos/Exercisim/haskell/twelve-days/twelve-days.cabal:
+  hash: a4a04b0643192a6990a404785658a6bb7c6ae57b7d3d56e74d1ce4dc6fe8b8df
+/home/alephsur/Documentos/Exercisim/haskell/twelve-days/package.yaml:
+  hash: e74c56e46f997cdfe2c0ceb5ef8eac024f5bd291bf3e632bd9f5ec0d12af11ac
+/home/alephsur/.stack/programs/x86_64-linux/ghc-tinfo6-9.0.2/lib/ghc-9.0.2/include/ghcversion.h:
+  hash: b6281754d6dc5c5462a97f01fbffb615a7d9f031384e8e8250fce23e8f43f266
+/usr/include/stdc-predef.h:
+  hash: cb08cd5d4cc059a90833ac48a284d25016e8d56ded8ad4cd98d8ac59cc5053f3
+/home/alephsur/Documentos/Exercisim/haskell/twelve-days/test/Tests.hs:
+  hash: cc0e930e59f0595eff7fbe6eaf25eedab12a42c487dda36b9ce527d7559f5cba
+? /home/alephsur/Documentos/Exercisim/haskell/twelve-days/.stack-work/dist/x86_64-linux-tinfo6/Cabal-3.4.1.0/build/test/autogen/Paths_twelve_days.hs
+: hash: 86a13de2c7dec41693d0476089ec5cd1f5838a1df25eeb3b26cc6aca171b6876
+? /home/alephsur/Documentos/Exercisim/haskell/twelve-days/.stack-work/dist/x86_64-linux-tinfo6/Cabal-3.4.1.0/build/test/autogen/cabal_macros.h
+: hash: fd814fbcade6c7766fbdd677d90059f614e281b08faeaac39c467d5a538e5c2b
